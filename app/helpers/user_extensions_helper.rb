@@ -1,0 +1,2 @@
+module UserExtensionsHelper
+end

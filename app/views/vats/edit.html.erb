@@ -1,0 +1,12 @@
+<% content_for :title, "Editing vat" %>
+
+<h1>Editing vat</h1>
+
+<%= render "form", vat: @vat %>
+
+<br>
+
+<div>
+  <%= link_to "Show this vat", @vat %> |
+  <%= link_to "Back to vats", vats_path %>
+</div>

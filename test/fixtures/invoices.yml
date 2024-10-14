@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  company: one
+  invoice_type: MyString
+  base_amount: 9.99
+  vat_rate: 9.99
+  vat_amount: 9.99
+  retention_rate: 9.99
+  retention_amount: 9.99
+  total: 9.99
+  executed: false
+
+two:
+  user: two
+  company: two
+  invoice_type: MyString
+  base_amount: 9.99
+  vat_rate: 9.99
+  vat_amount: 9.99
+  retention_rate: 9.99
+  retention_amount: 9.99
+  total: 9.99
+  executed: false

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  available_money: 9.99
+  saved_irpf: 9.99
+  estimated_monthly_expense: 9.99
+
+two:
+  user: two
+  available_money: 9.99
+  saved_irpf: 9.99
+  estimated_monthly_expense: 9.99

@@ -1,0 +1,67 @@
+<%= form_with(model: vat) do |form| %>
+  <% if vat.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(vat.errors.count, "error") %> prohibited this vat from being saved:</h2>
+
+      <ul>
+        <% vat.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :quarter, style: "display: block" %>
+    <%= form.number_field :quarter %>
+  </div>
+
+  <div>
+    <%= form.label :received_base_sum, style: "display: block" %>
+    <%= form.text_field :received_base_sum %>
+  </div>
+
+  <div>
+    <%= form.label :received_vat_sum, style: "display: block" %>
+    <%= form.text_field :received_vat_sum %>
+  </div>
+
+  <div>
+    <%= form.label :paid_base_sum, style: "display: block" %>
+    <%= form.text_field :paid_base_sum %>
+  </div>
+
+  <div>
+    <%= form.label :paid_vat_sum, style: "display: block" %>
+    <%= form.text_field :paid_vat_sum %>
+  </div>
+
+  <div>
+    <%= form.label :total, style: "display: block" %>
+    <%= form.text_field :total %>
+  </div>
+
+  <div>
+    <%= form.label :declaration_made, style: "display: block" %>
+    <%= form.check_box :declaration_made %>
+  </div>
+
+  <div>
+    <%= form.label :declaration_collected, style: "display: block" %>
+    <%= form.check_box :declaration_collected %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

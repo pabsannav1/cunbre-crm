@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Vats" %>
+
+<h1>Vats</h1>
+
+<div id="vats">
+  <% @vats.each do |vat| %>
+    <%= render vat %>
+    <p>
+      <%= link_to "Show this vat", vat %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New vat", new_vat_path %>

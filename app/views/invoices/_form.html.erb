@@ -1,0 +1,67 @@
+<%= form_with(model: invoice) do |form| %>
+  <% if invoice.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(invoice.errors.count, "error") %> prohibited this invoice from being saved:</h2>
+
+      <ul>
+        <% invoice.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :company_id, style: "display: block" %>
+    <%= form.text_field :company_id %>
+  </div>
+
+  <div>
+    <%= form.label :invoice_type, style: "display: block" %>
+    <%= form.text_field :invoice_type %>
+  </div>
+
+  <div>
+    <%= form.label :base_amount, style: "display: block" %>
+    <%= form.text_field :base_amount %>
+  </div>
+
+  <div>
+    <%= form.label :vat_rate, style: "display: block" %>
+    <%= form.text_field :vat_rate %>
+  </div>
+
+  <div>
+    <%= form.label :vat_amount, style: "display: block" %>
+    <%= form.text_field :vat_amount %>
+  </div>
+
+  <div>
+    <%= form.label :retention_rate, style: "display: block" %>
+    <%= form.text_field :retention_rate %>
+  </div>
+
+  <div>
+    <%= form.label :retention_amount, style: "display: block" %>
+    <%= form.text_field :retention_amount %>
+  </div>
+
+  <div>
+    <%= form.label :total, style: "display: block" %>
+    <%= form.text_field :total %>
+  </div>
+
+  <div>
+    <%= form.label :executed, style: "display: block" %>
+    <%= form.check_box :executed %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

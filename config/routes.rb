@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :vats
+  resources :transactions
+  resources :invoices
+  resources :companies
+  resources :user_extensions
   devise_for :users
   get "main/home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

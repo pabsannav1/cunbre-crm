@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @vat %>
+
+<div>
+  <%= link_to "Edit this vat", edit_vat_path(@vat) %> |
+  <%= link_to "Back to vats", vats_path %>
+
+  <%= button_to "Destroy this vat", @vat, method: :delete %>
+</div>
